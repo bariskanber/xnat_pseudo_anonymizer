@@ -1,7 +1,5 @@
 ## Stage 1
-FROM public.ecr.aws/docker/library/python:3.9-slim-bullseye AS stage1
-
-WORKDIR /tmp
+FROM public.ecr.aws/docker/library/python:3.9-slim-bullseye
 
 RUN apt-get update && \
     apt-get install -y nodejs npm
@@ -24,4 +22,3 @@ COPY getHashUID.js .
 COPY pseudo_anonymize.py .
 
 ENTRYPOINT ["python", "pseudo_anonymize.py"]
-

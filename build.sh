@@ -1,7 +1,8 @@
 #!/bin/bash
 
-docker build -t xnat_pseudo_anonymizer:latest -t xnat_pseudo_anonymizer:0.0.1 .
+version="$(cat version.txt)"
 
-docker save -o xnat_pseudo_anonymizer-0.0.1.tar xnat_pseudo_anonymizer:0.0.1
+sudo docker build -t xnat_pseudo_anonymizer:${version} .
 
+sudo docker save -o xnat_pseudo_anonymizer-${version}.tar xnat_pseudo_anonymizer:${version}
 
