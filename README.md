@@ -1,9 +1,9 @@
 # XNAT Pseudoanonymizer
-XNAT pseudo anonymization replicating DicomEdit `hashUID` function with optional conversion to base 36 representation
+XNAT pseudo anonymization replicating the hashUID function of DicomEdit with optional conversion to base 36 representation
 
 ## How to setup (Docker method)
 * Clone the repository
-* Install docker (e.g. `apt install docker.io`)
+* Install docker (e.g. `sudo apt install docker.io`)
 * Run `./build.sh`
 
 ## How to run (Docker method)
@@ -13,9 +13,9 @@ XNAT pseudo anonymization replicating DicomEdit `hashUID` function with optional
 
 ## How to setup (plain method)
 * Clone the repository
-* Install Python 3 (e.g. `apt install python3`)
+* Install Python 3 (e.g. `sudo apt install python3`)
 * Install numpy (`pip install numpy`)
-* Install node.js and node.js package manager (e.g. `apt-get install -y nodejs npm`)
+* Install node.js and node.js package manager (e.g. `sudo apt-get install -y nodejs npm`)
 * Install required node.js packages (`npm install uuid dicomedit-uuid big-integer`)
 
 ## How to run (plain method)
